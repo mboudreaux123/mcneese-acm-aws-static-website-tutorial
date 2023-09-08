@@ -1,6 +1,8 @@
 # AWS static website tutorial
 A tutorial on how to host a static website on Amazon Simple Storage Service (S3) on Amazon Web Servies (AWS).
 
+Live example: http://mboudreaux.s3-website-us-east-1.amazonaws.com/
+
 ## 1. Create an Amazon Web Services (AWS) account
 
 ## 2. Create an Amazon Simple Storage Service (S3) bucket
@@ -55,4 +57,24 @@ In the textbox, put the following bucket policy to allow all object to be access
 Note: Change "your-s3-bucket-name" under Resource to the name of the bucket you created.
 
 Once saved, you should now be able to access the files through the URL.
+
+## 5. Redirect default URL to index page
+
+Go back the the S3 dashboard for your particular bucket.
+
+Click on the "**Properties**" tab to edit the bucket permissions.
+
+Go to the "**Static website hosting**" section and click the "**Edit**" button to the right.
+
+When prompted, Enable Static website hosting. Additonal settings will appear.
+
+Navigate to "**Index document**" and in the text box underneath it, type "index.html" or whatevery your html file is named.
+
+Click on the orange "**Save Changes**" button at the bottom right of the webpage.
+
+You are now able to access the website using the Amazon S3 URL
+
+
+
+
 
