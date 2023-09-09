@@ -1,80 +1,101 @@
-/* 
-Host static website on Amazon Web Services(AWS) tutorial
-Michael Boudreaux
-9/8/2023
-
-Resources:
-
-Generate gradients: https://cssgradient.io/
-Generate glass effect: https://css.glass/
-Generate text for toubleshooting: https://loremipsum.io/generator/
-
+/*
+  Static Website Example for McNeese ACM
+  Michael Boudreaux
+  9/8/2023
 */
 
-/* Clear the default web broswer styles */
+/* Reset the CSS provided by the webrowser */
+/* This resets all elements as noted by the wildcard "*" */
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-  font-family: Arial, Helvetica, sans-serif;
-  
+	font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
-
-.fullscreen {
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
+/* ID to change the style of the main-section div */
+#main-section {
+	/* Set the width of the div to 100% of the width of the window*/
+	width: 100%;
+	/* Set the height to scale to the content of the div */
+	/* Ie: The more content you have, the longer the height is */
+	height: auto;
+	/* Set the minimum height of the div to the height of the view size */
+	/* This prevents the background of the body div from showing*/
+	min-height: 100vh;
 }
 
-.subsection {
-  width: 100%;
-  height: auto;
-  max-width: 920px;
-  overflow: hidden;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 1rem;
+/* ID to change the style of the sub-section div */
+#sub-section {
+	width: 100%;
+	max-width: 920px;
+	height: auto;
+	min-height: 220px;
+	
+	/* Hide overflowing text and corners of photos */
+	overflow: hidden;
 }
 
-.title {
-  
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.center-child-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* Give a HTML element the "glass" style*/
 .glass {
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.55);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.45);
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(255, 255, 255, 0.65);
+	backdrop-filter: blur(24px);
 }
 
-#section1 {
-  background: linear-gradient(90deg, rgba(225,193,246,1) 0%, rgba(255,201,201,1) 50%, rgba(255,233,172,1) 100%);
+/* Give a HTML element the "glass" style, but with a blue shade*/
+.blue-glass {
+	background-color: rgba(234, 255, 255, 0.45);
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(255, 255, 255, 0.65);
+	backdrop-filter: blur(24px);
 }
 
-.section-divide {
-  width: 100%;
-  height: 2px;
-  background-color: black;
+/* Class to assign rounded corners to a HTML element*/
+.rounded-corners {
+	border-radius: 16px;
 }
 
+/* Class to assign a background gradient to a HTML element*/
+.background-gradient {
+	/* Gradient generated from https://cssgradient.io/ */
+	background: linear-gradient(90deg, rgba(225,193,246,1) 0%, rgba(255,201,201,1) 50%, rgba(255,233,172,1) 100%);
+}
+
+/* Class to make a HTML element center its children horizontally and vertically */
+.center-children {
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	flex-direction: column;
+	row-gap: 24px;
+}
+
+/* Class to create invisible padding before and at the end of the webpage */
+.padding {
+	width: 100%;
+	height: 40px;
+}
+
+/* Class to create a black horizontal divider */
+.section-divider {
+	width: 100%;
+ 	height: 2px;
+ 	background-color: black;
+}
+
+/* Class to add padding around the div internally */
+.section-padding {
+	width: 100;
+	height: 100;
+	padding: 20px;
+}
+
+/* Class to give a HTML element more space around */
 .text-space {
-  margin-top: 10px;
-  margin-bottom: 10px;
+	margin-top: 10px;
+ 	margin-bottom: 10px;
 }
