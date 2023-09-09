@@ -3,7 +3,7 @@ A tutorial on how to host a static website on Amazon Simple Storage Service (S3)
 
 This was made as a presentation for the McNeese ACM student chapter on 9/8/2023.
 
-Live example: http://mboudreaux.s3-website-us-east-1.amazonaws.com/
+Live example: http://acm-static-website.s3-website-us-east-1.amazonaws.com/
 
 Edit the code on CodePen: https://codepen.io/mboudreaux/pen/jOXBERL
 
