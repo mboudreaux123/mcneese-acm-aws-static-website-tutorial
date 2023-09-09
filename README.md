@@ -1,7 +1,18 @@
 # AWS static website tutorial
 A tutorial on how to host a static website on Amazon Simple Storage Service (S3) on Amazon Web Servies (AWS).
 
+This was made as a presenttion for the McNeese ACM student chapter on 9/8/2023.
+
 Live example: http://mboudreaux.s3-website-us-east-1.amazonaws.com/
+
+Edit the code on CodePen: [Link work-in-progress]
+
+## 0. Preparation
+You can upload your own HTML and CSS files, just be sure to have at the minimum a HTML file to follow along.
+
+This repository includes "index.html" and "style.css" if you would rather use a premade example.
+
+Download the files of you choosing, either your own or both the HTML and CSS files included in this repository to your computer.
 
 ## 1. Create an Amazon Web Services (AWS) account
 
@@ -26,7 +37,7 @@ To finalize the creation of the bucket, click the organge "**Create Bucket**" bu
 
 Select the bucket that you just created. You will be redirected to the dashboard for your S3 bucket.
 
-To upload files, drag files from your computer to the S3 bucket dashbaord, or select "**Upload**" to pick a file on your computer.
+To upload files, drag the HTML and CSS files from your computer to the S3 bucket dashbaord, or select "**Upload**" to pick a file on your computer.
 
 You should now be able to see the names of the files in the S3 bucket, but will not be able to access them.
 
@@ -74,7 +85,36 @@ Click on the orange "**Save Changes**" button at the bottom right of the webpage
 
 You are now able to access the website using the Amazon S3 URL
 
+# References
 
+Hosting a static website using Amazon S3:
 
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html
 
+# License
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <https://unlicense.org>
 
