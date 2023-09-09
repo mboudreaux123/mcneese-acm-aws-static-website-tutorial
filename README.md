@@ -91,6 +91,20 @@ Hosting a static website using Amazon S3:
 
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html
 
+# Resources
+
+Generate gradients:
+
+https://cssgradient.io/
+
+Generate glass effect:
+
+https://css.glass/
+
+Generate text for troubleshooting:
+
+https://loremipsum.io/generator/
+
 # License
 
 This is free and unencumbered software released into the public domain.
