@@ -5,7 +5,7 @@ This was made as a presentation for the McNeese ACM student chapter on 9/8/2023.
 
 Live example: http://mboudreaux.s3-website-us-east-1.amazonaws.com/
 
-Edit the code on CodePen: [Link work-in-progress]
+Edit the code on CodePen: https://codepen.io/mboudreaux/pen/jOXBER
 
 ## 0. Preparation
 You can upload your own HTML and CSS files, just be sure to have at the minimum a HTML file to follow along.
